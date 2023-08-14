@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Conference Registration</title>
+  <!-- Add Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    nav {
+  float: left;
+  width: 10%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #c2d6e9;
+  padding: 20px;
+}
+
+
+  </style>
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-4">
+        <img src="technology.png" alt="Event Logo" class="img-fluid mb-3" width="60" height="40">
+        <p>Welcome to the Tech Savvy!The world renowned multinational IT company </br> We now arrange various IT sessions for the tech enthusiasts all around the world</p>
+      </header>
+
+    <!-- Sessions Table -->
+    <section>
+        <nav>
+            <h4>Upcoming sessions:</h4>
+          <ul>
+            <li><a href="#" onclick="alert('Two sessions of Java available')">Java</a></li>
+            <li><a href="#" onclick="alert('Two sessions of Mern available')">Mern</a></li>
+            <li><a href="#" onclick="alert('Two sessions of SQA available')">SQA</a></li>
+          </ul>
+        </nav>
+
+        <div class="container mt-4 table-responsive">
+            
+            <option value=""></option>
+            <h2>Sessions Schedule</h2>
+            <table class="table table-dark table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>Session Name</th>
+                  <th>Speaker</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="#">Java1</a></td>
+                  <td>Sarwar Miral</td>
+                  <td>August 16</td>
+                  <td>8.30 AM</td>
+                </tr>
+                <tr>
+                    <td><a href="#">Java2</a></td>
+                    <td>Sarwar Miral</td>
+                    <td>August 17</td>
+                    <td>8.30 AM</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Mern1</a></td>
+                    <td>Nani Gopal Barai</td>
+                    <td>August 16</td>
+                    <td>10.00 AM</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Mern2</a></td>
+                    <td>Nani Gopal Barai</td>
+                    <td>August 17</td>
+                    <td>10.30 AM</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">SQA1</a></td>
+                    <td>Sarwar Miral</td>
+                    <td>August 16</td>
+                    <td>10.30 AM</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">SQA2</a></td>
+                    <td>Sarwar Miral</td>
+                    <td>August 17</td>
+                    <td>10.30 AM</td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+      </section>
+
+      <div class="container mt-4 ">
+        <h2>Registration</h2>
+        <form>
+          <div class="form form-group form-dark">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="form-group form-dark">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="form-group form-dark">
+            <label for="organization">Organization</label>
+            <input type="text" class="form-control" id="organization">
+          </div>
+          <div class="form-group form-dark">
+            <label for="session">Preferred Session</label>
+            <select class="form-control" id="session">
+              <option value="">Select a session</option>
+              <option value="Java1">Java1</option>
+              <option value="Java2">Java2</option>
+              <option value="Mern1">Mern1</option>
+              <option value="Mern2">Mern2</option>
+              <option value="SQA1">SQA1</option>
+              <option value="SQA2">SQA2</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary" onclick="alert('Registration Complete')">Register</button>
+        </form>
+      </div>
+
+      <footer class="bg-dark text-white text-center py-3 mt-4">
+        <div>
+            <h4> Event Details</h4>
+            <p> Dates: 16/08/2023-17/08/2023</p>
+            <p>Location: Tech Savvy, Banani, Dhaka, Bangladesh</p>
+
+        </div>
+
+           <p><a href="#">About us</a></p>
+
+        <p>&copy; Contact: tech.savvy@gmail.com</p>
+      </footer>
+    
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
