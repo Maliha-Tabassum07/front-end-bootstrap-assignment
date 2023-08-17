@@ -9,8 +9,8 @@
   <style>
     nav {
   float: left;
-  width: 10%;
-  height: 300px; /* only for demonstration, should be removed */
+  width: 16%;
+  height: 50px;
   background: #c2d6e9;
   padding: 20px;
 }
@@ -27,12 +27,12 @@
     <!-- Sessions Table -->
     <section>
         <nav>
-            <h4>Upcoming sessions:</h4>
-          <ul>
-            <li><a href="#" onclick="alert('Two sessions of Java available')">Java</a></li>
-            <li><a href="#" onclick="alert('Two sessions of Mern available')">Mern</a></li>
-            <li><a href="#" onclick="alert('Two sessions of SQA available')">SQA</a></li>
-          </ul>
+        <select id="session",style="background: #c2d6e9">
+        <option value="session">Available sessions</option> 
+        <option value="Java" onclick="alert('Two sessions of Mern available')">Java</option>
+        <option value="Mern" onclick="alert('Two sessions of Mern available')">Mern</option>
+        <option value="SQA" onclick="alert('Two sessions of SQA available')">SQA</option>
+        </select>
         </nav>
 
         <div class="container mt-4 table-responsive">
@@ -90,7 +90,7 @@
           </div>
       </section>
 
-      <div class="container mt-4 ">
+      <div class="container mt-4 " style="width: 40%;">
         <h2>Registration</h2>
         <form>
           <div class="form form-group form-dark">
@@ -122,16 +122,16 @@
       </div>
 
       <footer class="bg-dark text-white text-center py-3 mt-4">
-        <div>
-            <h4> Event Details</h4>
-            <p> Dates: 16/08/2023-17/08/2023</p>
-            <p>Location: Tech Savvy, Banani, Dhaka, Bangladesh</p>
-
+        <div class="row">
+          <div class="col-sm-6" ><h5> Event Details</h5>
+            <p> Technologies: Java EE, Mern full stack, SQA </br> Dates: 16/08/2023-17/08/2023</br> Location: Tech Savvy, Banani, Dhaka, Bangladesh</p>
+          </div>
+          <div class="col-sm-6" >
+            <p><a href="#">About us</a></p>
+ 
+         <p>&copy; Contact: tech.savvy@gmail.com</p></div>
         </div>
 
-           <p><a href="#">About us</a></p>
-
-        <p>&copy; Contact: tech.savvy@gmail.com</p>
       </footer>
     
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
